@@ -26,38 +26,21 @@ Cada **local** é identificado por sua posição geográfica (**latitude e longi
 
 Um **agente** de trânsito é identificado por sua **matrícula** funcional (um número inteiro) e também é descrito com o **nome**, **data de contratação** e **tempo de serviço** em meses completos.
 
-## Entrega
+## Desafio
 
-DER - diagrama entidade-relacionamento elaborado na ferramenta brModelo na
-versão 3.31 ou superior;
-DLD - diagrama lógico de dados elaborado na ferramenta brModelo na versão 3.31
-ou superior;
-Script Fisico: script somente de criação com as restrições fundamentais das
-tabelas, respeitando as lógicas de criação no banco de dados e criando a base de
-dados somente se ela não existir, conforme estudado em aulas anteriores e usando
-uma única instrução procedural coerente no MySQL;
-Script Popula: script que somente insere dados no banco de dados,
-respeitando suas regras e lógicas modeladas com mínimo de 5 tuplas por tabela;
-Script Consulta: As consultas deverão estar em outro script (Consultas) que você
-deverá elaborar para concluir esta atividade da disciplina.
-Uma instrução SELECT deverá ser elaborada para cada uma das demandas
-apresentadas a seguir e que estarão no outro
-novo script bem documentado (com cabeçalho coerente). Reflitam sobre a
-apresentação dos dados resultantes de cada
-pesquisa que deveriam ser apresentados de maneira satisfatória para os seus
-usuários finais.
-A) Apresentar todos os dados dos veículos de um determinado proprietário
-fornecido pelo usuário, relacionando por extenso a
-categoria que cada um é classificado (implementar tal consulta através de uma
-VIEW que respeite as propriedades
-esclarecidas ao final desta lista de consultas) ;
-B) Consultar proprietário(s) por qualquer parte do nome fornecido pelo usuário;
-C) Mostrar os dados da infração e do veículo que tiveram infrações cadastradas no
-Detran em um período (ou data) no
-padrão DE... ATÉ...;
-D) Pesquisar quantos veículos existem cadastrados por Modelo, inclusive
-apresentando os modelos cadastrados que não
-tiverem nenhum veículo cadastrado, se existir tal situação
+A desafio consiste em entregar 5 arquivos:
+
+- **DER** - diagrama entidade-relacionamento elaborado na ferramenta brModelo;
+- **DLD** - diagrama lógico de dados elaborado na ferramenta brModelo;
+- Script **Físico**: script sql para criação do banco de dados e suas tabelas;
+- Script **Popula**: script sql para popular o banco de dados com dados fictícios, mas coerentes com o modelo de dados (mínimo de 5 registros por tabela);
+- Script **Consulta**: script sql com as consultas (SELECT) solicitadas abaixo:
+  - **A)** Apresentar todos os dados dos veículos de um determinado proprietário (informado pelo usuário através do CPF);
+  - **B)** Consultar proprietário(s) por qualquer parte do nome;
+  - **C)** Mostrar os dados da infração e do veículo que tiveram infrações cadastradas no Detran em um período (ou data) no padrão DE... ATÉ...;
+  - **D)** Pesquisar o número de veículos que foram cadastrados em cada modelo, ordenando pelo número de veículos em ordem decrescente;
+
+## Entrega
 
 - A entrega do desafio deve ser realizada através de uma Release no GitHub.
   - Crie a release no seu repositório pessoal e envie o zip pelo google classroom.
